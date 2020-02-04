@@ -1,11 +1,12 @@
 body {
   justify-content: center;
   height: calc(100vh - 8em);
+  color: #64676a;
 }
 #element {
     height: 60rem;
-    background: rgb(255,207,179);
-    background: linear-gradient(0deg, rgba(255,207,179,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(199,223,255,1) 100%);
 }
 
 /* hr {
@@ -32,13 +33,7 @@ body {
     transform: translateY(-50%);
     font-family: 'Raleway', sans-serif;
 }
-#Project {
-  font-family: 'Overpass', sans-serif;
-  font-weight: 700;
-  font-size: 110%;
-  letter-spacing: 0.2rem;
-  color: rgba(255,255,255,.75);
-}
+
 
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -53,8 +48,11 @@ body {
   to{border-right-color: transparent;}
 }
 
-
-
+/* ------------------------------Travail trick color--------------------------------- */
+#Travail {
+    background: rgb(199,223,255);
+background: linear-gradient(180deg, rgba(199,223,255,1) 0%, rgba(255,216,216,1) 100%);
+}
 
 /* --------------------------------------------------------------- */
 /*
@@ -62,9 +60,9 @@ body {
 /*
 /* --------------------------------------------------------------- */
 
+
 #Skills {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,207,179,1) 100%);
+    margin-bottom: 7rem;
 }
 .socialbtn {
   color: #64676a;
@@ -111,13 +109,16 @@ body {
 /*
 /* --------------------------------------------------------------- */
 
+#Project {
+    margin-top: 10rem;
+}
 .container {
   position: relative;
 }
-
+/*
 #premiere {
      margin-top: 100px;
-}
+} */
 
 
 .image {
@@ -125,8 +126,8 @@ body {
   width: 350px;
   height: 170px;
   border-radius: 1%;
-  -webkit-filter: grayscale(70%);
-  filter: grayscale(70%);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
 }
 
 .overlay {
@@ -134,7 +135,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #191919;
+  background: #ffffff;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -146,7 +147,7 @@ body {
 }
 
 .link {
-  color: white;
+  color: #64676a;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -157,15 +158,15 @@ body {
   white-space: nowrap;
 }
 
+.fa-external-link-alt {
+    color: #64676a;;
+}
 .text:hover {
   transition: 0.5s;
-  color: white;
-}
-.fa-external-link-alt {
-  color: grey;
+  color: #dbddfe;
 }
 .fa-youtube {
-     color: grey
+     color: #ff0000;
 }
 
 .screen2 {
@@ -174,12 +175,69 @@ body {
 
 #machine_a_ecrire {
      margin-top: 50px;
+     color: #64676a;
+}
+#Project-typewrite {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 110%;
+  letter-spacing: 0.2rem;
+  color: #64676a;
 }
 
 .typewrite {
-  color: white;
+  color: #64676a;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   letter-spacing: 0.8rem;
   padding-bottom: 100px;
   }
+
+
+    /* --------------------------------------------------------------- */
+    /*
+    /* Social
+    /*
+    /* --------------------------------------------------------------- */
+#Reseaux {
+    padding-top : 5rem;
+    padding-bottom: 5rem;
+    background: rgb(254,216,216);
+    background: linear-gradient(180deg, rgba(254,216,216,1) 0%, rgba(247,255,190,1) 100%);
+}
+
+.fab {
+    color: #64676a;
+}
+.fas {
+    color: #64676a;
+}
+.fa-facebook:hover {
+  color: #3a5698;
+  transition: 0.9s;
+}
+.fa-linkedin-in:hover {
+    color: #75b9fe;
+    transition: 0.9s;
+}
+.fa-github-alt:hover {
+    color: black;
+    transition: 0.9s;
+}
+.fa-at:hover {
+    color: #fe6a6b;
+    transition: 0.9s;
+}
+
+.social {
+  transform-origin: 0 0;
+  transform: rotateZ(-90deg);
+  position: absolute;
+  top: 148rem;
+  right: -8rem;
+  bottom: 0;
+  font-family: 'Overpass', sans-serif;
+  font-size: 250%;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
